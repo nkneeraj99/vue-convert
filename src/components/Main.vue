@@ -10,11 +10,20 @@
               <div class="banner-content-box appeight-headline pera-content">
                 <h1 class="cd-headline clip is-full-width">
                   Play Online Fantasy Cricket!
-                  <span class="cd-words-wrapper">
-                    <b class="is-visible">win amount</b>
-                    <b>#Favourite11</b>
-                    <b>Khelo & Jeeto!</b>
-                  </span>
+
+                  <vue-typer
+                    :text="['#Favourite11', 'Khelo & Jeeto!', 'win amount']"
+                    :repeat="Infinity"
+                    :shuffle="false"
+                    initial-action="erasing"
+                    :pre-type-delay="70"
+                    :type-delay="70"
+                    :pre-erase-delay="1900"
+                    :erase-delay="100"
+                    erase-style="backspace"
+                    :erase-on-complete="true"
+                    caret-animation="smooth"
+                  ></vue-typer>
                 </h1>
                 <!--                                <P>SaaSio is the best software platform for running an internet business. </P>-->
                 <div class="ei-banner-btn">
@@ -34,35 +43,37 @@
                                                                     <p>(based on <span>1,256 task</span> reviews)</p>
                                                                 </div>-->
               </div>
-              <div
-                class="ei-banner-mbl-mockup wow fadeInRight"
-                data-wow-delay="600ms"
-                data-wow-duration="1500ms"
-              >
-                <img src="../assets/img/app-landing/mockup/bm1.png" alt="" />
-              </div>
+              <u-animate-container>
+                <div class="ei-banner-mbl-mockup wow fadeInRight">
+                  <u-animate
+                    name="fadeInRight"
+                    delay="600ms"
+                    duration="1500ms"
+                    :iteration="1"
+                    :offset="0"
+                    animateClass="animated"
+                    :begin="false"
+                  >
+                    <img
+                      src="../assets/img/app-landing/mockup/bm1.png"
+                      alt=""
+                    />
+                  </u-animate>
+                </div>
+              </u-animate-container>
             </div>
           </div>
         </div>
       </div>
       <div class="waveWrapper waveAnimation">
         <div class="waveWrapperInner bgTop">
-          <div
-            class="wave waveTop"
-            style="background-image: url('assets/img/app-landing/shape/b-shapeup.png')"
-          ></div>
+          <div class="wave waveTop"></div>
         </div>
         <div class="waveWrapperInner bgMiddle">
-          <div
-            class="wave waveMiddle"
-            style="background-image: url('assets/img/app-landing/shape/b-shapemiddle.png')"
-          ></div>
+          <div class="wave waveMiddle"></div>
         </div>
         <div class="waveWrapperInner bgBottom">
-          <div
-            class="wave waveBottom"
-            style="background-image: url('assets/img/app-landing/shape/b-shapemiddle.png')"
-          ></div>
+          <div class="wave waveBottom"></div>
         </div>
       </div>
     </section>
@@ -87,87 +98,125 @@
 
         <div class="eight-feature-content">
           <div class="row justify-content-md-center">
-            <div
-              class="col-lg-3 col-md-6  wow fadeFromUp"
-              data-wow-delay="0ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="eight-feature-box text-center position-relative">
-                <div class="feature-icon8 position-relative">
-                  <i class="flaticon-logo"></i>
-                  <span class="ei-icon-bg"></span>
-                </div>
-                <div class="feature-text8 appeight-headline pera-content">
-                  <h3>Fast Withdrawal</h3>
-                  <p>
-                    Faster withdrawal experience through IMPS. Check Paytm
-                    Withdrawal too.
-                  </p>
-                </div>
-                <div class="ei-feature-more">
-                  <a href="#"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
+            <div class="col-lg-3 col-md-6  wow fadeInUp">
+              <u-animate-container>
+                <u-animate
+                  name="fadeInUp"
+                  delay="0ms"
+                  duration="1500ms"
+                  :iteration="1"
+                  :offset="0"
+                  animateClass="animated"
+                  :begin="false"
+                >
+                  <div class="eight-feature-box text-center position-relative">
+                    <div class="feature-icon8 position-relative">
+                      <i class="flaticon-logo"></i>
+                      <span class="ei-icon-bg"></span>
+                    </div>
+                    <div class="feature-text8 appeight-headline pera-content">
+                      <h3>Fast Withdrawal</h3>
+                      <p>
+                        Faster withdrawal experience through IMPS. Check Paytm
+                        Withdrawal too.
+                      </p>
+                    </div>
+                    <div class="ei-feature-more">
+                      <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </u-animate>
+              </u-animate-container>
             </div>
-            <div
-              class="col-lg-3 col-md-6 wow fadeFromUp"
-              data-wow-delay="300ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="eight-feature-box text-center position-relative">
-                <div class="feature-icon8 position-relative">
-                  <i class="flaticon-computer"></i>
-                  <span class="ei-icon-bg"></span>
-                </div>
-                <div class="feature-text8 appeight-headline pera-content">
-                  <h3>Refer & Earn</h3>
-                  <p>Refer your friends and Get instant Rs. 100 cash bonus.</p>
-                </div>
-                <div class="ei-feature-more">
-                  <a href="#"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
+            <div class="col-lg-3 col-md-6 wow fadeFromUp">
+              <u-animate-container>
+                <u-animate
+                  name="fadeInUp"
+                  delay="300ms"
+                  duration="1500ms"
+                  :iteration="1"
+                  :offset="0"
+                  animateClass="animated"
+                  :begin="false"
+                >
+                  <div class="eight-feature-box text-center position-relative">
+                    <div class="feature-icon8 position-relative">
+                      <i class="flaticon-computer"></i>
+                      <span class="ei-icon-bg"></span>
+                    </div>
+                    <div class="feature-text8 appeight-headline pera-content">
+                      <h3>Refer & Earn</h3>
+                      <p>
+                        Refer your friends and Get instant Rs. 100 cash bonus.
+                      </p>
+                    </div>
+                    <div class="ei-feature-more">
+                      <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </u-animate>
+              </u-animate-container>
             </div>
             <div
               class="col-lg-3 col-md-6 wow fadeFromUp"
               data-wow-delay="900ms"
               data-wow-duration="1500ms"
             >
-              <div class="eight-feature-box text-center position-relative">
-                <div class="feature-icon8 position-relative">
-                  <i class="flaticon-pen-tool"></i>
-                  <span class="ei-icon-bg"></span>
-                </div>
-                <div class="feature-text8 appeight-headline pera-content">
-                  <h3>Playing & Not Playing</h3>
-                  <p>Before 30 mints you can see the match reports.</p>
-                </div>
-                <div class="ei-feature-more">
-                  <a href="#"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
+              <u-animate-container>
+                <u-animate
+                  name="fadeInUp"
+                  delay="900ms"
+                  duration="1500ms"
+                  :iteration="1"
+                  :offset="0"
+                  animateClass="animated"
+                  :begin="false"
+                >
+                  <div class="eight-feature-box text-center position-relative">
+                    <div class="feature-icon8 position-relative">
+                      <i class="flaticon-pen-tool"></i>
+                      <span class="ei-icon-bg"></span>
+                    </div>
+                    <div class="feature-text8 appeight-headline pera-content">
+                      <h3>Playing & Not Playing</h3>
+                      <p>Before 30 mints you can see the match reports.</p>
+                    </div>
+                    <div class="ei-feature-more">
+                      <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </u-animate>
+              </u-animate-container>
             </div>
-            <div
-              class="col-lg-3 col-md-6 wow fadeFromUp"
-              data-wow-delay="1200ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="eight-feature-box text-center position-relative">
-                <div class="feature-icon8 position-relative">
-                  <i class="flaticon-layers"></i>
-                  <span class="ei-icon-bg"></span>
-                </div>
-                <div class="feature-text8 appeight-headline pera-content">
-                  <h3>Instant Withdrawal</h3>
-                  <p>
-                    Get instant withdrawal with in 30 minutes after match
-                    finished.
-                  </p>
-                </div>
-                <div class="ei-feature-more">
-                  <a href="#"><i class="fas fa-plus"></i></a>
-                </div>
-              </div>
+            <div class="col-lg-3 col-md-6 wow fadeFromUp">
+              <u-animate-container>
+                <u-animate
+                  name="fadeInUp"
+                  delay="1200ms"
+                  duration="1500ms"
+                  :iteration="1"
+                  :offset="0"
+                  animateClass="animated"
+                  :begin="false"
+                >
+                  <div class="eight-feature-box text-center position-relative">
+                    <div class="feature-icon8 position-relative">
+                      <i class="flaticon-layers"></i>
+                      <span class="ei-icon-bg"></span>
+                    </div>
+                    <div class="feature-text8 appeight-headline pera-content">
+                      <h3>Instant Withdrawal</h3>
+                      <p>
+                        Get instant withdrawal with in 30 minutes after match
+                        finished.
+                      </p>
+                    </div>
+                    <div class="ei-feature-more">
+                      <a href="#"><i class="fas fa-plus"></i></a>
+                    </div>
+                  </div>
+                </u-animate>
+              </u-animate-container>
             </div>
           </div>
         </div>
@@ -188,12 +237,28 @@
             <div class="eg-funfact-content clearfix position-relative">
               <div
                 class="eg-fun-fact-mockup wow fadeFromLeft"
+                v-wow
                 data-wow-delay="300ms"
                 data-wow-duration="1500ms"
               >
-                <div class="main-mockup">
-                  <img src="../assets/img/app-landing/mockup/fmu1.png" alt="" />
-                </div>
+                <u-animate-container>
+                  <u-animate
+                    name="fadeFromLeft"
+                    delay="300ms"
+                    duration="1500ms"
+                    :iteration="1"
+                    :offset="0"
+                    animateClass="animated"
+                    :begin="false"
+                  >
+                    <div class="main-mockup">
+                      <img
+                        src="../assets/img/app-landing/mockup/fmu1.png"
+                        alt=""
+                      />
+                    </div>
+                  </u-animate>
+                </u-animate-container>
                 <!--                                <div class="fn-shape fn-shape-item1" data-parallax='{"y" : 50}'><img src="assets/img/app-landing/mockup/fmu2.png" alt=""></div>
                                                                 <div class="fn-shape fn-shape-item2" data-parallax='{"y" : 60}'><img src="assets/img/app-landing/mockup/fmu3.png" alt=""></div>
                                                                 <div class="fn-shape fn-shape-item3" data-parallax='{"x" : -50}'><img src="assets/img/app-landing/shape/fc1.png" alt=""></div>
@@ -204,19 +269,31 @@
                 data-wow-delay="300ms"
                 data-wow-duration="1500ms"
               >
-                <div
-                  class="eight-section-title appeight-headline pera-content text-left"
-                >
-                  <span class="eg-title-tag">
-                    Fun facts
-                    <i class="square-shape"><i></i><i></i><i></i><i></i></i
-                  ></span>
-                  <h2>
-                    India's Trusted Gaming Platform
-                    <!--                                        <span>funfacts for clients.</span>-->
-                  </h2>
-                  <!--                                    <p>As a app web crawler expert, I help organizations adjust to the expanding significance of internet promoting.</p>-->
-                </div>
+                <u-animate-container>
+                  <u-animate
+                    name="fadeFromRight"
+                    delay="300ms"
+                    duration="1500ms"
+                    :iteration="1"
+                    :offset="0"
+                    animateClass="animated"
+                    :begin="false"
+                  >
+                    <div
+                      class="eight-section-title appeight-headline pera-content text-left"
+                    >
+                      <span class="eg-title-tag">
+                        Fun facts
+                        <i class="square-shape"><i></i><i></i><i></i><i></i></i
+                      ></span>
+                      <h2>
+                        India's Trusted Gaming Platform
+                        <!--                                        <span>funfacts for clients.</span>-->
+                      </h2>
+                      <!--                                    <p>As a app web crawler expert, I help organizations adjust to the expanding significance of internet promoting.</p>-->
+                    </div>
+                  </u-animate>
+                </u-animate-container>
                 <!-- /title -->
                 <div class="fun-fact-counter position-relative clearfix">
                   <div class="eg-counter-number pera-content text-center">
@@ -262,7 +339,7 @@
         <div class="row">
           <div class="col-lg-7">
             <div
-              class="ei-how-work-content-item wow fadeFromUp"
+              class="ei-how-work-content-item wow fadeInUp"
               data-wow-delay="300ms"
               data-wow-duration="1500ms"
             >
@@ -281,58 +358,59 @@
               </div>
               <!-- /title -->
               <div id="how-workscrollbar" class="how-work-scroller">
-                <div class="eg-how-work-content">
-                  <div class="eg-how-work-icon-text position-relative">
-                    <span class="scroller-no">1</span>
-                    <div class="eg-how-work-icon float-left text-center">
-                      <i class="flaticon-verified-user"></i>
+                <vue-scroll :ops="ops">
+                  <div class="eg-how-work-content">
+                    <div class="eg-how-work-icon-text position-relative">
+                      <span class="scroller-no">1</span>
+                      <div class="eg-how-work-icon float-left text-center">
+                        <i class="flaticon-verified-user"></i>
+                      </div>
+                      <div
+                        class="eg-how-work-text appeight-headline pera-content"
+                      >
+                        <h3>Select the Match</h3>
+                        <p>Select the match you want to participate in.</p>
+                      </div>
                     </div>
-                    <div
-                      class="eg-how-work-text appeight-headline pera-content"
-                    >
-                      <h3>Select the Match</h3>
-                      <p>Select the match you want to participate in.</p>
+                    <div class="eg-how-work-icon-text position-relative">
+                      <span class="scroller-no">2</span>
+                      <div class="eg-how-work-icon float-left text-center">
+                        <i class="flaticon-download"></i>
+                      </div>
+                      <div
+                        class="eg-how-work-text appeight-headline pera-content"
+                      >
+                        <h3>Create your Team</h3>
+                        <p>Use your game skills and pick the right players.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="eg-how-work-icon-text position-relative">
-                    <span class="scroller-no">2</span>
-                    <div class="eg-how-work-icon float-left text-center">
-                      <i class="flaticon-download"></i>
+                    <div class="eg-how-work-icon-text position-relative">
+                      <span class="scroller-no">3</span>
+                      <div class="eg-how-work-icon float-left text-center">
+                        <i class="flaticon-corporate-identity"></i>
+                      </div>
+                      <div
+                        class="eg-how-work-text appeight-headline pera-content"
+                      >
+                        <h3>Join Contest</h3>
+                        <p>
+                          Choose any contest as per your budget and win amount.
+                        </p>
+                      </div>
                     </div>
-                    <div
-                      class="eg-how-work-text appeight-headline pera-content"
-                    >
-                      <h3>Create your Team</h3>
-                      <p>Use your game skills and pick the right players.</p>
+                    <div class="eg-how-work-icon-text position-relative">
+                      <span class="scroller-no">4</span>
+                      <div class="eg-how-work-icon float-left text-center">
+                        <i class="flaticon-text"></i>
+                      </div>
+                      <div
+                        class="eg-how-work-text appeight-headline pera-content"
+                      >
+                        <h3>Watch your winning</h3>
+                        <p>See Leaderboard for your winner ranking.</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="eg-how-work-icon-text position-relative">
-                    <span class="scroller-no">3</span>
-                    <div class="eg-how-work-icon float-left text-center">
-                      <i class="flaticon-corporate-identity"></i>
-                    </div>
-                    <div
-                      class="eg-how-work-text appeight-headline pera-content"
-                    >
-                      <h3>Join Contest</h3>
-                      <p>
-                        Choose any contest as per your budget and win amount.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="eg-how-work-icon-text position-relative">
-                    <span class="scroller-no">4</span>
-                    <div class="eg-how-work-icon float-left text-center">
-                      <i class="flaticon-text"></i>
-                    </div>
-                    <div
-                      class="eg-how-work-text appeight-headline pera-content"
-                    >
-                      <h3>Watch your winning</h3>
-                      <p>See Leaderboard for your winner ranking.</p>
-                    </div>
-                  </div>
-                  <!--                                    <div class="eg-how-work-icon-text position-relative">
+                    <!--                                    <div class="eg-how-work-icon-text position-relative">
                                                                             <span class="scroller-no">5</span>
                                                                             <div class="eg-how-work-icon float-left text-center">
                                                                                 <i class="flaticon-idea"></i>
@@ -342,13 +420,14 @@
                                                                                 <p>As a app web crawler expert, I help organizations adjusting.</p>
                                                                             </div>
                                                                         </div>-->
-                </div>
+                  </div>
+                </vue-scroll>
               </div>
             </div>
           </div>
           <div class="col-lg-5">
             <div
-              class="how-work-mockup position-relative wow fadeFromUp"
+              class="how-work-mockup position-relative wow fadeInUp"
               data-wow-delay="600ms"
               data-wow-duration="1500ms"
             >
@@ -893,7 +972,7 @@
     <section id="ei-partner" class="ei-partner-section">
       <div class="container">
         <div class="ei-partner-content">
-          <carousel>
+          <!--<carousel>
             <div id="ei-partner-slide" class="partner-slide-area owl-carousel">
               <div class="partner-img">
                 <img src="../assets/img/app-landing/partner/p1.png" alt="" />
@@ -921,7 +1000,7 @@
             <template slot="prev"><span class="prev">prev</span></template>
 
             <template slot="next"><span class="next">next</span></template>
-          </carousel>
+          </carousel>-->
 
           <!-- <div class="ei-partner-text appeight-headline pera-content">
             <div class="ei-partner-icon text-center float-left">
@@ -985,16 +1064,36 @@
       </div>
     </section>
   </div>
+
   <!-- End of Newslatter  section
            ============================================= -->
 </template>
 
 <script>
+// import carousel from "vue-owl-carousel";
+import Vue from "vue";
+import { VueTyper } from "vue-typer";
 
-import carousel from 'vue-owl-carousel'
+import vuescroll from "vuescroll/dist/vuescroll-native";
+// import the css file
+import "vuescroll/dist/vuescroll.css";
+
+Vue.use(vuescroll);
+
+import VueWow from "vue-wow";
+Vue.use(VueWow);
+import { UAnimateContainer, UAnimate } from "vue-wow";
 
 export default {
-    components: { carousel },
-}
+  components: { VueTyper, UAnimateContainer, UAnimate },
+  data() {
+    return {
+      //   ops: {}, // Your options
 
+      rail: {
+        background: 'rgb(233,233,243)',
+      },
+    };
+  },
+};
 </script>

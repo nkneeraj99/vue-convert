@@ -8,7 +8,7 @@
 
 /* @font-face {
     font-family: 'Circular';
-    src: url('Circula-Medium.html') format('woff2'),
+    src: url('Circula-Medium.html') format('woff2')
     url('Circula-Medium-2.html') format('woff');
     font-weight: 500;
     font-style: normal;
@@ -23,11 +23,11 @@
 }
 
 
-@font-face {
+/* @font-face {
     font-family: 'Circular Std Book';
-    src: url('../fonts/app_landing/CircularStd-Book.woff2') format('woff2');
-    /* url('../fonts/app_landing/CircularStd-Book.html') format('woff'); */
+    src: url('../fonts/app_landing/CircularStd-Book.woff2') format('woff2'),
+    url('../fonts/app_landing/CircularStd-Book.html') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 

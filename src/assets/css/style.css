@@ -434,6 +434,7 @@ theme.
     display: inline;
     padding: 28px 5px;
     position: relative;
+    color: #fff;
   }
 
   .main-header-eight .appheader-content .navigation-eight li a:after {
@@ -796,6 +797,7 @@ Sticky Menu
 
 .waveTop {
   background-size: 50% 100px;
+  background-image: url('../img/app-landing/shape/b-shapeup.png')
 }
 
 .waveAnimation .waveTop {
@@ -806,6 +808,7 @@ Sticky Menu
 
 .waveMiddle {
   background-size: 50% 120px;
+  background-image: url('../img/app-landing/shape/b-shapemiddle.png')
 }
 
 .waveAnimation .waveMiddle {
@@ -814,6 +817,7 @@ Sticky Menu
 
 .waveBottom {
   background-size: 50% 100px;
+  background-image: url('../img/app-landing/shape/b-shapemiddle.png')
 }
 
 .waveAnimation .waveBottom {
@@ -821,7 +825,7 @@ Sticky Menu
 }
 
 .cd-headline.clip span {
-  display: inline-block;
+  /* display: inline-block; */
   padding-bottom: 10px;
 }
 
@@ -4273,14 +4277,14 @@ Sticky Menu
   height: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  /* background-image: url(../img/seo/shape/sericon2.html); */
+  /* background-image: url(../img/seo/shape/sericon2.png); */
 }
 
 .appseo-service-content .appseo-service-icon-text .appseo-service-icon:after {
   top: 0;
   left: auto;
   right: -45px;
-  /* background-image: url(../img/seo/shape/sericon1.html); */
+  /* background-image: url(../img/seo/shape/sericon1.png); */
 }
 
 .appseo-service-content .appseo-service-icon-text .appseo-service-text h3 {
@@ -4305,7 +4309,7 @@ Sticky Menu
   position: absolute;
   background-repeat: no-repeat;
   transition: 0.3s all ease-in-out;
-  /* background-image: url(../img/seo/shape/s-shape1.html); */
+  /* background-image: url(../img/seo/shape/s-shape1.png); */
 }
 
 .appseo-service-content .appseo-service-box {
@@ -4372,7 +4376,7 @@ Sticky Menu
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-image: url(../img/seo/shape/abbg.html); */
+  /* background-image: url(../img/seo/shape/abbg.png); */
 }
 
 .appseo-about-section .partner-slide-area {
@@ -4469,7 +4473,7 @@ Sticky Menu
   height: 100%;
   position: absolute;
   background-size: cover;
-  /* background-image: url(../img/seo/shape/r-shape.html); */
+  /* background-image: url(../img/seo/shape/r-shape.png); */
 }
 
 .ready-to-grow-section .ready-vector {
@@ -4562,7 +4566,7 @@ Sticky Menu
   z-index: -1;
   position: absolute;
   background-repeat: no-repeat;
-  /* background-image: url(../img/seo/shape/rg-shape1.html); */
+  /* background-image: url(../img/seo/shape/rg-shape1.png); */
 }
 
 .appseo-mission-area-section .appseo-mission-vector {
@@ -4609,15 +4613,15 @@ Sticky Menu
   height: 130px;
   position: absolute;
   background-repeat: no-repeat;
-  /* background-image: url(../img/seo/shape/ms1.html); */
+  /* background-image: url(../img/seo/shape/ms1.png); */
 }
 
 .appseo-mission-area-text .appseo-mission-area-item .appseo-mission-item-content:nth-child(2) .appseo-mission-item-icon:before {
-  /* background-image: url(../img/seo/shape/ms2.html); */
+  /* background-image: url(../img/seo/shape/ms2.png); */
 }
 
 .appseo-mission-area-text .appseo-mission-area-item .appseo-mission-item-content:nth-child(3) .appseo-mission-item-icon:before {
-  /* background-image: url(../img/seo/shape/ms3.html); */
+  /* background-image: url(../img/seo/shape/ms3.png); */
 }
 
 .appseo-mission-area-text .appseo-mission-area-item .appseo-mission-item-content .appseo-mission-area-text h3 {
@@ -4643,7 +4647,7 @@ Sticky Menu
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-image: url(../img/seo/shape/abbg.html); */
+  /* background-image: url(../img/seo/shape/abbg.png); */
 }
 
 .appseo-pricing-section .appseo-pricing-title {
@@ -4671,7 +4675,7 @@ Sticky Menu
   bottom: 15px;
   right: -100px;
   z-index: -1;
-  /* background-image: url(../img/seo/shape/pr-shape.html); */
+  /* background-image: url(../img/seo/shape/pr-shape.png); */
   position: absolute;
 }
 
@@ -4694,7 +4698,7 @@ Sticky Menu
   width: 210px;
   height: 125px;
   position: absolute;
-  /* background-image: url(../img/seo/shape/prs.html); */
+  /* background-image: url(../img/seo/shape/prs.png); */
 }
 
 .appseo-pricing-section .appseo-pricing-inner-box .appseo-pricing-img {
@@ -5028,7 +5032,7 @@ Sticky Menu
   width: 100%;
   height: 100%;
   position: absolute;
-  /* background-image: url(../img/seo/banner/ctabg.html); */
+  /* background-image: url(../img/seo/banner/ctabg.jpg); */
 }
 
 .appseo-cta-section .overlay-bg {
@@ -6299,7 +6303,7 @@ Sticky Menu
 
 .saas-modern-preloader {
   background-color: #fff;
-  /* background: #fff url("../img/saas-m/pre.html") no-repeat center center; */
+  /* background: #fff url("../img/saas-m/pre.svg") no-repeat center center; */
 }
 
 .decoration-wrapper {
@@ -7373,7 +7377,7 @@ Sticky Menu
   visibility: hidden;
   left: -18px;
   transition: 0.3s all ease-in-out;
-  /* background-image: url(../img/saas-m/partner/pbg.html); */
+  /* background-image: url(../img/saas-m/partner/pbg.png); */
   background-repeat: no-repeat;
   position: absolute;
 }
@@ -7518,7 +7522,7 @@ Sticky Menu
   opacity: 0;
   visibility: hidden;
   transition: 0.3s all ease-in-out;
-  /* background-image: url(../img/saas-m/testimonial/tshape1.html); */
+  /* background-image: url(../img/saas-m/testimonial/tshape1.png); */
   background-repeat: no-repeat;
 }
 
@@ -7632,7 +7636,7 @@ Sticky Menu
   max-width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  /* background-image: url(../img/saas-m/testimonial/in-bg.html); */
+  /* background-image: url(../img/saas-m/testimonial/in-bg.png); */
 }
 
 .testimonial_indicator .carousel-indicators li {
@@ -8497,7 +8501,7 @@ Sticky Menu
 
 .saas-classic-preloader {
   background-color: #fff;
-  /* background: #fff url("../img/saas-c/pre.html") no-repeat center center; */
+  /* background: #fff url("../img/saas-c/pre.svg") no-repeat center center; */
 }
 
 .saas2-headline h1,
@@ -9013,7 +9017,7 @@ Sticky Menu
   height: 115%;
   position: absolute;
   background-repeat: no-repeat;
-  /* background-image: url(../img/saas-c/banner/b-shape1.html); */
+  /* background-image: url(../img/saas-c/banner/b-shape1.png); */
 }
 
 .saas_two_banner_section .s2-banner_content {
@@ -9197,7 +9201,7 @@ Sticky Menu
   width: 800px;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-image: url(../img/saas-c/banner/abshape.html); */
+  /* background-image: url(../img/saas-c/banner/abshape.png); */
 }
 
 .saas_two_about_section:after {
@@ -9209,7 +9213,7 @@ Sticky Menu
   border-radius: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  /* background-image: url(../img/saas-c/banner/abshape2.html); */
+  /* background-image: url(../img/saas-c/banner/abshape2.png); */
 }
 
 .saas_two_about_section .about_content_s2 {
@@ -9635,7 +9639,7 @@ Sticky Menu
   height: 100%;
   z-index: -1;
   position: absolute;
-  /* background-image: url(../img/saas-c/banner/fbg.html); */
+  /* background-image: url(../img/saas-c/banner/fbg.png); */
 }
 
 .s2-faq_section .s2_faq_content {
@@ -9908,7 +9912,7 @@ Sticky Menu
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-image: url(../img/saas-c/banner/fobg.html); */
+  /* background-image: url(../img/saas-c/banner/fobg.png); */
 }
 
 .saas_two_footer_section .s2-newslatter_section {
@@ -10847,7 +10851,7 @@ Sticky Menu
 
 .str-preloader {
   background-color: #fff;
-  /* background: #fff url("../img/startup/pre.html") no-repeat center center; */
+  /* background: #fff url("../img/startup/pre.svg") no-repeat center center; */
 }
 
 .decoration-wrapper {
@@ -11410,7 +11414,7 @@ Sticky Menu
   bottom: 0;
   left: -130px;
   z-index: -1;
-  /* background-image: url(../img/startup/shape/fs1.html); */
+  /* background-image: url(../img/startup/shape/fs1.png); */
   transition-delay: 0.3s;
 }
 
@@ -11418,7 +11422,7 @@ Sticky Menu
   z-index: -2;
   bottom: -70px;
   left: -120px;
-  /* background-image: url(../img/startup/shape/fs2.html); */
+  /* background-image: url(../img/startup/shape/fs2.png); */
 }
 
 .str-feature-section .str-feature-icon-text:hover {
@@ -11889,7 +11893,7 @@ Sticky Menu
   height: 20px;
   position: absolute;
   background-repeat: no-repeat;
-  /* background-image: url(../img/startup/shape/rv1.html); */
+  /* background-image: url(../img/startup/shape/rv1.png); */
 }
 
 .str-work-process-section .str-work-process-content .col-lg-4:nth-child(2) .str-work-icon-text .icon-inner-shadow {
@@ -11918,7 +11922,7 @@ Sticky Menu
   height: 20px;
   position: absolute;
   background-repeat: no-repeat;
-  /* background-image: url(../img/startup/shape/rv2.html); */
+  /* background-image: url(../img/startup/shape/rv2.png); */
 }
 
 .str-work-process-section .str-work-process-content .col-lg-4:nth-child(3) .str-work-icon-text .icon-inner-shadow {
@@ -12142,7 +12146,7 @@ Sticky Menu
   max-width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  /* background-image: url(../img/startup/testimonial/in-bg.html); */
+  /* background-image: url(../img/startup/testimonial/in-bg.png); */
 }
 
 .str-testimonial_indicator .carousel-indicators li {
@@ -16577,7 +16581,7 @@ div#pm-preloader {
   height: 685px;
   bottom: -400px;
   position: absolute;
-  /* background-image: url(../img/hrm/shape/dot-s.html); */
+  /* background-image: url(../img/hrm/shape/dot-s.png); */
 }
 .pm-feature-section-2 .pm-feature-content-2 .pm-feature-item-details {
   padding: 15px 0px 40px;
@@ -17619,4 +17623,50 @@ div#pm-preloader {
     box-shadow: 0px 1px 6px #ccc;
     padding: 15px;
     margin: 30px 0px;
+}
+
+.how-work-scroller{
+  overflow: auto;
+}
+/* width */
+.how-work-scroller ::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.how-work-scroller ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.how-work-scroller ::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.how-work-scroller ::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.how-work-scroller ::-moz-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.how-work-scroller ::-moz-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.how-work-scroller ::-moz-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.how-work-scroller ::-moz-scrollbar-thumb:hover {
+  background: #b30000; 
 }

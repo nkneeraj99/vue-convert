@@ -5,7 +5,7 @@
     <div class="appheader-content">
       <div class="site-logo float-left">
         <a href="#"
-          ><img src="assets/img/app-landing/logo/logo1.png" alt=""
+          ><img src="../assets/img/app-landing/logo/logo1.png" alt=""
         /></a>
       </div>
       <nav class="navigation-eight ul-li">

@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import  'bootstrap'
-// import $ from "jquery";
+global.jQuery = jQuery;
+import jQuery from "jquery";
+import "bootstrap";
+
 
 
 Vue.config.productionTip = false
