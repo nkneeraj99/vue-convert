@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "swiper": "^6.4.15",
     "v-wow": "git+https://github.com/guisoares2011/vue-wow.git",
     "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-js-counter": "^1.0.3",
     "vue-typer": "^1.2.0",
     "vue-wow": "^1.2.0",
     "vuescroll": "^4.17.3"
@@ -26,6 +29,7 @@
     "expose-loader": "^2.0.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "sass-loader": "^10.1.1",
     "vue-owl-carousel": "^2.0.3",
     "vue-template-compiler": "^2.6.11"
   },

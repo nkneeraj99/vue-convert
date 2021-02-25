@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+
     <Main />
     <Footer />
   </div>
@@ -11,8 +12,6 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Main from "./components/Main.vue";
-// import carousel from 'vue-owl-carousel'
-
 
 export default {
   name: "App",
@@ -21,7 +20,6 @@ export default {
     Header,
     Main,
     Footer,
-    // carousel
   },
 };
 </script>
@@ -34,4 +32,7 @@ export default {
 @import "./assets/css/swiper.css";
 @import "./assets/css/newfont.css";
 @import "./assets/css/fontawesome-all.css";
+html{
+  overflow-x: hidden;
+}
 </style>

@@ -3,11 +3,12 @@ import App from './App.vue'
 global.jQuery = jQuery;
 import jQuery from "jquery";
 import "bootstrap";
-
+import store from "./store";
 
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  store,
+  render: (h) => h(App),
+}).$mount("#app");

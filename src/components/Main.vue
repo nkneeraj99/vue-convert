@@ -295,28 +295,78 @@
                   </u-animate>
                 </u-animate-container>
                 <!-- /title -->
-                <div class="fun-fact-counter position-relative clearfix">
-                  <div class="eg-counter-number pera-content text-center">
-                    <span class="odometer" data-count="20 Lakh">00</span
-                    ><strong>+</strong>
-                    <p>Winning Distributed</p>
-                  </div>
-                  <div class="eg-counter-number pera-content text-center">
-                    <span class="odometer" data-count="2000">00</span
-                    ><strong>+</strong>
-                    <p>Active users</p>
-                  </div>
-                  <div class="eg-counter-number pera-content text-center">
-                    <span class="odometer" data-count="5000">00</span
-                    ><strong>+</strong>
-                    <p>Downloads done</p>
-                  </div>
-                  <div class="eg-counter-number pera-content text-center">
-                    <span class="odometer" data-count="2500">00</span
-                    ><strong>+</strong>
-                    <p>5 stars ratings</p>
-                  </div>
-                </div>
+                <u-animate-container>
+                  <u-animate
+                    name="fadeFromRight"
+                    delay="300ms"
+                    duration="1500ms"
+                    :iteration="1"
+                    :offset="0"
+                    animateClass="animated"
+                    :begin="false"
+                  >
+                    <div class="fun-fact-counter position-relative clearfix">
+                      <div class="eg-counter-number pera-content text-center">
+                        <!--<span class="odometer" data-count="20 Lakh">00</span>-->
+                        <VueJsCounter
+                          class="odometer"
+                          start="0"
+                          end="20"
+                          duration="5000"
+                          thousand=""
+                        >
+                          <strong>+</strong></VueJsCounter
+                        >
+
+                        <!-- <strong>+</strong>-->
+                        <p>Winning Distributed</p>
+                      </div>
+
+                      <div class="eg-counter-number pera-content text-center">
+                        <!--<span class="odometer" data-count="2000">00</span
+                        ><strong>+</strong>-->
+                        <VueJsCounter
+                          class="odometer"
+                          start="0"
+                          end="2000"
+                          duration="5000"
+                          thousand=""
+                        >
+                          <strong>+</strong></VueJsCounter
+                        >
+                        <p>Active users</p>
+                      </div>
+                      <div class="eg-counter-number pera-content text-center">
+                        <!-- <span class="odometer" data-count="5000">00</span
+                        ><strong>+</strong>-->
+                        <VueJsCounter
+                          class="odometer"
+                          start="0"
+                          end="5000"
+                          duration="5000"
+                          thousand=""
+                        >
+                          <strong>+</strong></VueJsCounter
+                        >
+                        <p>Downloads done</p>
+                      </div>
+                      <div class="eg-counter-number pera-content text-center">
+                        <!-- <span class="odometer" data-count="2500">00</span
+                        ><strong>+</strong>-->
+                        <VueJsCounter
+                          class="odometer"
+                          start="0"
+                          end="2500"
+                          duration="5000"
+                          thousand=""
+                        >
+                          <strong>+</strong></VueJsCounter
+                        >
+                        <p>5 stars ratings</p>
+                      </div>
+                    </div>
+                  </u-animate>
+                </u-animate-container>
               </div>
             </div>
           </div>
@@ -338,92 +388,97 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <div
-              class="ei-how-work-content-item wow fadeInUp"
-              data-wow-delay="300ms"
-              data-wow-duration="1500ms"
-            >
-              <div
-                class="eight-section-title appeight-headline pera-content text-left"
+            <u-animate-container>
+              <u-animate
+                name="fadeFromUp"
+                delay="300ms"
+                duration="1500ms"
+                :iteration="1"
+                :offset="0"
+                animateClass="animated"
+                :begin="false"
               >
-                <span class="eg-title-tag">
-                  How to play?<i class="square-shape"
-                    ><i></i><i></i><i></i><i></i
-                  ></i>
-                </span>
-                <h2>
-                  This app is working by
-                  <span>some steps!</span>
-                </h2>
-              </div>
-              <!-- /title -->
-              <div id="how-workscrollbar" class="how-work-scroller">
-                <vue-scroll :ops="ops">
-                  <div class="eg-how-work-content">
-                    <div class="eg-how-work-icon-text position-relative">
-                      <span class="scroller-no">1</span>
-                      <div class="eg-how-work-icon float-left text-center">
-                        <i class="flaticon-verified-user"></i>
-                      </div>
-                      <div
-                        class="eg-how-work-text appeight-headline pera-content"
-                      >
-                        <h3>Select the Match</h3>
-                        <p>Select the match you want to participate in.</p>
-                      </div>
-                    </div>
-                    <div class="eg-how-work-icon-text position-relative">
-                      <span class="scroller-no">2</span>
-                      <div class="eg-how-work-icon float-left text-center">
-                        <i class="flaticon-download"></i>
-                      </div>
-                      <div
-                        class="eg-how-work-text appeight-headline pera-content"
-                      >
-                        <h3>Create your Team</h3>
-                        <p>Use your game skills and pick the right players.</p>
-                      </div>
-                    </div>
-                    <div class="eg-how-work-icon-text position-relative">
-                      <span class="scroller-no">3</span>
-                      <div class="eg-how-work-icon float-left text-center">
-                        <i class="flaticon-corporate-identity"></i>
-                      </div>
-                      <div
-                        class="eg-how-work-text appeight-headline pera-content"
-                      >
-                        <h3>Join Contest</h3>
-                        <p>
-                          Choose any contest as per your budget and win amount.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="eg-how-work-icon-text position-relative">
-                      <span class="scroller-no">4</span>
-                      <div class="eg-how-work-icon float-left text-center">
-                        <i class="flaticon-text"></i>
-                      </div>
-                      <div
-                        class="eg-how-work-text appeight-headline pera-content"
-                      >
-                        <h3>Watch your winning</h3>
-                        <p>See Leaderboard for your winner ranking.</p>
-                      </div>
-                    </div>
-                    <!--                                    <div class="eg-how-work-icon-text position-relative">
-                                                                            <span class="scroller-no">5</span>
-                                                                            <div class="eg-how-work-icon float-left text-center">
-                                                                                <i class="flaticon-idea"></i>
-                                                                            </div>
-                                                                            <div class="eg-how-work-text appeight-headline pera-content">
-                                                                                <h3>Now Use It</h3>
-                                                                                <p>As a app web crawler expert, I help organizations adjusting.</p>
-                                                                            </div>
-                                                                        </div>-->
+                <div
+                  class="ei-how-work-content-item wow fadeInUp"
+                  data-wow-delay="300ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div
+                    class="eight-section-title appeight-headline pera-content text-left"
+                  >
+                    <span class="eg-title-tag">
+                      How to play?<i class="square-shape"
+                        ><i></i><i></i><i></i><i></i
+                      ></i>
+                    </span>
+                    <h2>
+                      This app is working by
+                      <span>some steps!</span>
+                    </h2>
                   </div>
-                </vue-scroll>
-              </div>
-            </div>
+                  <!-- /title -->
+                  <div id="how-workscrollbar" class="how-work-scroller">
+                    <vue-scroll>
+                      <div class="eg-how-work-content">
+                        <div class="eg-how-work-icon-text position-relative">
+                          <span class="scroller-no">1</span>
+                          <div class="eg-how-work-icon float-left text-center">
+                            <i class="flaticon-verified-user"></i>
+                          </div>
+                          <div
+                            class="eg-how-work-text appeight-headline pera-content"
+                          >
+                            <h3>Select the Match</h3>
+                            <p>Select the match you want to participate in.</p>
+                          </div>
+                        </div>
+                        <div class="eg-how-work-icon-text position-relative">
+                          <span class="scroller-no">2</span>
+                          <div class="eg-how-work-icon float-left text-center">
+                            <i class="flaticon-download"></i>
+                          </div>
+                          <div
+                            class="eg-how-work-text appeight-headline pera-content"
+                          >
+                            <h3>Create your Team</h3>
+                            <p>
+                              Use your game skills and pick the right players.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="eg-how-work-icon-text position-relative">
+                          <span class="scroller-no">3</span>
+                          <div class="eg-how-work-icon float-left text-center">
+                            <i class="flaticon-corporate-identity"></i>
+                          </div>
+                          <div
+                            class="eg-how-work-text appeight-headline pera-content"
+                          >
+                            <h3>Join Contest</h3>
+                            <p>
+                              Choose any contest as per your budget and win
+                              amount.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="eg-how-work-icon-text position-relative">
+                          <span class="scroller-no">4</span>
+                          <div class="eg-how-work-icon float-left text-center">
+                            <i class="flaticon-text"></i>
+                          </div>
+                          <div
+                            class="eg-how-work-text appeight-headline pera-content"
+                          >
+                            <h3>Watch your winning</h3>
+                            <p>See Leaderboard for your winner ranking.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </vue-scroll>
+                  </div>
+                </div>
+              </u-animate>
+            </u-animate-container>
           </div>
           <div class="col-lg-5">
             <div
@@ -431,24 +486,36 @@
               data-wow-delay="600ms"
               data-wow-duration="1500ms"
             >
-              <div class="hw-mockup-img">
-                <img
-                  src="../assets/img/app-landing/mockup/blank-copy.gif"
-                  alt=""
-                />
-              </div>
-              <div
-                class="hw-shape1 position-absolute"
-                data-parallax='{"x" : 40}'
-              >
-                <img src="../assets/img/app-landing/shape/fc1.png" alt="" />
-              </div>
-              <div
-                class="hw-shape2 position-absolute"
-                data-parallax='{"x" : -30}'
-              >
-                <img src="../assets/img/app-landing/shape/fc2.png" alt="" />
-              </div>
+              <u-animate-container>
+                <u-animate
+                  name="fadeFromUp"
+                  delay="600ms"
+                  duration="1500ms"
+                  :iteration="1"
+                  :offset="0"
+                  animateClass="animated"
+                  :begin="false"
+                >
+                  <div class="hw-mockup-img">
+                    <img
+                      src="../assets/img/app-landing/mockup/blank-copy.gif"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="hw-shape1 position-absolute"
+                    data-parallax='{"x" : 40}'
+                  >
+                    <img src="../assets/img/app-landing/shape/fc1.png" alt="" />
+                  </div>
+                  <div
+                    class="hw-shape2 position-absolute"
+                    data-parallax='{"x" : -30}'
+                  >
+                    <img src="../assets/img/app-landing/shape/fc2.png" alt="" />
+                  </div>
+                </u-animate>
+              </u-animate-container>
             </div>
           </div>
         </div>
@@ -501,13 +568,7 @@
                   <a href="app_updater/Favourite11.apk"
                     ><img src="../assets/img/app-landing/shape/btn1.png" alt=""
                   /></a>
-                  <!--                                    <a href="#"><img src="assets/img/app-landing/shape/btn2.png" alt=""></a>-->
                 </div>
-                <!--                                <div class="ei-download-btn pera-content">
-                                                                    <div class="download-icon float-left"><i class="flaticon-idea"></i></div>
-                                                                    <p>Are you interested for this app?</p>
-                                                                    <a href="#">Learn More </a>
-                                                                </div>-->
               </div>
             </div>
           </div>
@@ -564,7 +625,7 @@
               <!-- /title -->
               <div class="ei-faq-queans">
                 <div class="accordion" id="accordionExample">
-                  <div class="ei-faq faq_bg">
+                  <div class="ei-faq">
                     <div class="ei-faq-header" id="headingOne">
                       <button
                         class=""
@@ -710,6 +771,7 @@
         <img src="../assets/img/app-landing/shape/fq-shape7.png" alt=""
       /></span>
     </section>
+
     <!-- End of Faq section
             ============================================= -->
 
@@ -735,68 +797,36 @@
         </div>
         <!-- /title -->
 
-        <div class="row ei-appScreenshotCarousel-container swiper-container">
+        <div
+          class="row ei-appScreenshotCarousel-container swiper-container swiper-container-3d"
+        >
           <div class="ei-screen-mobile-image"></div>
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot01.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot02.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot03.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot04.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot05.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot06.png)"
-            ></div>
+          <swiper class="swiper" :options="swiperOption" ref="swiper">
+            <swiper-slide class="swiper-slide1"></swiper-slide>
+            <swiper-slide class="swiper-slide2"></swiper-slide>
+            <swiper-slide class="swiper-slide3"></swiper-slide>
+            <swiper-slide class="swiper-slide4"></swiper-slide>
+            <swiper-slide class="swiper-slide5"></swiper-slide>
+            <swiper-slide class="swiper-slide6"></swiper-slide>
             <!--                        <div class="swiper-slide" style="background-image:url(assets/img/app-landing/screenshoot/search.png)"></div>-->
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot01.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot02.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot03.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot04.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot05.png)"
-            ></div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(assets/img/app-landing/screenshoot/screenshot06.png)"
-            ></div>
+            <swiper-slide class="swiper-slide7"></swiper-slide>
+            <swiper-slide class="swiper-slide8"></swiper-slide>
+            <swiper-slide class="swiper-slide9"></swiper-slide>
+            <swiper-slide class="swiper-slide10"></swiper-slide>
+            <swiper-slide class="swiper-slide11"></swiper-slide>
             <!--                        <div class="swiper-slide" style="background-image:url(assets/img/app-landing/screenshoot/search.png)"></div>-->
-          </div>
+          </swiper>
           <!-- Add Arrows -->
         </div>
         <!-- Navigations -->
+
         <div class="banner-navigation">
-          <div class="swiper-button-prev">
+          <div class="swiper-pagination" slot="pagination"></div>
+
+          <div class="swiper-button-prev" slot="button-prev" @click="prev()">
             <span class="fas fa-chevron-left"></span>
           </div>
-          <div class="swiper-button-next">
+          <div class="swiper-button-next" slot="button-prev" @click="next()">
             <span class="fas fa-chevron-right"></span>
           </div>
         </div>
@@ -832,101 +862,116 @@
         </div>
         <!-- /title -->
         <div class="ei-testimonial-content">
-          <div
-            id="testimonial-scroller"
-            class="testimonial-scroller-area owl-carousel"
-          >
-            <div class="ei-testimonial-img-text position-relative">
-              <div class="test--quote-icon">
-                <i class="fas fa-quote-right"></i>
-              </div>
-              <div class="ei-testimonial-img float-left text-center">
-                <img
-                  src="../assets/img/app-landing/testimonial/boy1.png"
-                  alt=""
-                />
-              </div>
-              <div class="ei-testimonial-text">
-                <div class="ei-testimonial-name appeight-headline pera-content">
-                  <h3>Ankur Agrawal</h3>
-                  <span>Senior Director</span>
+          <div id="testimonial-scroller" class="testimonial-scroller-area ">
+            <carousel
+              :nav="false"
+              :dots="false"
+              :items="2"
+              :margin="120"
+              :loop="true"
+              :responsive="{
+                0: { items: 1, nav: false },
+                600: { items: 2, nav: false },
+              }"
+            >
+              <div class="ei-testimonial-img-text position-relative">
+                <div class="test--quote-icon">
+                  <i class="fas fa-quote-right"></i>
                 </div>
-                <p>
-                  As a die-hard cricket fan, I practically kept track of all
-                  sorts of news on players, teams and tournaments.
-                </p>
-                <div class="ei-testi-rate ul-li clearfix">
-                  <ul>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                  </ul>
+                <div class="ei-testimonial-img float-left text-center">
+                  <img
+                    src="../assets/img/app-landing/testimonial/boy1.png"
+                    alt=""
+                  />
                 </div>
-              </div>
-            </div>
-            <div class="ei-testimonial-img-text position-relative">
-              <div class="test--quote-icon">
-                <i class="fas fa-quote-right"></i>
-              </div>
-              <div class="ei-testimonial-img float-left text-center">
-                <img
-                  src="../assets/img/app-landing/testimonial/boy2.png"
-                  alt=""
-                />
-              </div>
-              <div class="ei-testimonial-text">
-                <div class="ei-testimonial-name appeight-headline pera-content">
-                  <h3>Anurag Saxsena</h3>
-                  <span>Marketing Head</span>
-                </div>
-                <p>
-                  “ Thanks to Favourite11. Main ₹ 50000 jit gaya. Experience on
-                  play11 is good and I'm happy with your service.
-                </p>
-                <div class="ei-testi-rate ul-li clearfix">
-                  <ul>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                  </ul>
+                <div class="ei-testimonial-text">
+                  <div
+                    class="ei-testimonial-name appeight-headline pera-content"
+                  >
+                    <h3>Ankur Agrawal</h3>
+                    <span>Senior Director</span>
+                  </div>
+                  <p>
+                    As a die-hard cricket fan, I practically kept track of all
+                    sorts of news on players, teams and tournaments.
+                  </p>
+                  <div class="ei-testi-rate ul-li clearfix">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="ei-testimonial-img-text position-relative">
-              <div class="test--quote-icon">
-                <i class="fas fa-quote-right"></i>
-              </div>
-              <div class="ei-testimonial-img float-left text-center">
-                <img
-                  src="../assets/img/app-landing/testimonial/boy3.png"
-                  alt=""
-                />
-              </div>
-              <div class="ei-testimonial-text">
-                <div class="ei-testimonial-name appeight-headline pera-content">
-                  <h3>Ankit Singh</h3>
-                  <span>Games Developer</span>
+              <div class="ei-testimonial-img-text position-relative">
+                <div class="test--quote-icon">
+                  <i class="fas fa-quote-right"></i>
                 </div>
-                <p>
-                  My experience with Favourite11 platform has been great. Their
-                  tagline which says “Kheloge Nahi Toh Jeetoge Kaise?’ Is a
-                  perfect fit.
-                </p>
-                <div class="ei-testi-rate ul-li clearfix">
-                  <ul>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                  </ul>
+                <div class="ei-testimonial-img float-left text-center">
+                  <img
+                    src="../assets/img/app-landing/testimonial/boy2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="ei-testimonial-text">
+                  <div
+                    class="ei-testimonial-name appeight-headline pera-content"
+                  >
+                    <h3>Anurag Saxsena</h3>
+                    <span>Marketing Head</span>
+                  </div>
+                  <p>
+                    “ Thanks to Favourite11. Main ₹ 50000 jit gaya. Experience
+                    on play11 is good and I'm happy with your service.
+                  </p>
+                  <div class="ei-testi-rate ul-li clearfix">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="ei-testimonial-img-text position-relative">
+                <div class="test--quote-icon">
+                  <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="ei-testimonial-img float-left text-center">
+                  <img
+                    src="../assets/img/app-landing/testimonial/boy3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="ei-testimonial-text">
+                  <div
+                    class="ei-testimonial-name appeight-headline pera-content"
+                  >
+                    <h3>Ankit Singh</h3>
+                    <span>Games Developer</span>
+                  </div>
+                  <p>
+                    My experience with Favourite11 platform has been great.
+                    Their tagline which says “Kheloge Nahi Toh Jeetoge Kaise?’
+                    Is a perfect fit.
+                  </p>
+                  <div class="ei-testi-rate ul-li clearfix">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </carousel>
           </div>
         </div>
       </div>
@@ -972,43 +1017,53 @@
     <section id="ei-partner" class="ei-partner-section">
       <div class="container">
         <div class="ei-partner-content">
-          <!--<carousel>
-            <div id="ei-partner-slide" class="partner-slide-area owl-carousel">
-              <div class="partner-img">
-                <img src="../assets/img/app-landing/partner/p1.png" alt="" />
-              </div>
-              <div class="partner-img">
-                <img src="../assets/img/app-landing/partner/p2.png" alt="" />
-              </div>
-              <div class="partner-img">
-                <img src="../assets/img/app-landing/partner/p3.png" alt="" />
-              </div>
-              <div class="partner-img">
-                <img src="../assets/img/app-landing/partner/p4.png" alt="" />
-              </div>
-
-              <div class="partner-img">
-                <img src="../assets/img/app-landing/partner/p2.png" alt="" />
-              </div>
-              <div class="partner-img">
-                <img src="../assets/img/app-landing/partner/p3.png" alt="" />
-              </div>
+          <carousel
+            :nav="false"
+            :dots="false"
+            :items="4"
+            :margin="20"
+            :loop="true"
+            :responsive="{
+              0: { items: 3, nav: false, margin: 50 },
+              600: { items: 4, nav: false },
+            }"
+          >
+            <!-- <div id="ei-partner-slide" class="partner-slide-area owl-carousel">-->
+            <div class="partner-img">
+              <img src="../assets/img/app-landing/partner/p1.png" alt="" />
             </div>
+            <div class="partner-img">
+              <img src="../assets/img/app-landing/partner/p2.png" alt="" />
+            </div>
+            <div class="partner-img">
+              <img src="../assets/img/app-landing/partner/p3.png" alt="" />
+            </div>
+            <div class="partner-img">
+              <img src="../assets/img/app-landing/partner/p4.png" alt="" />
+            </div>
+
+            <div class="partner-img">
+              <img src="../assets/img/app-landing/partner/p2.png" alt="" />
+            </div>
+            <div class="partner-img">
+              <img src="../assets/img/app-landing/partner/p3.png" alt="" />
+            </div>
+            <!-- </div>-->
           </carousel>
 
-          <carousel>
+          <!--<carousel>
             <template slot="prev"><span class="prev">prev</span></template>
 
             <template slot="next"><span class="next">next</span></template>
           </carousel>-->
 
-          <!-- <div class="ei-partner-text appeight-headline pera-content">
+          <div class="ei-partner-text appeight-headline pera-content">
             <div class="ei-partner-icon text-center float-left">
               <i class="fas fa-gem"></i>
             </div>
             <h4>Trusted by 12,000 Users!</h4>
             <p>We have more than 12000+ trusted Users in India.</p>
-          </div>-->
+          </div>
         </div>
       </div>
     </section>
@@ -1070,30 +1125,176 @@
 </template>
 
 <script>
-// import carousel from "vue-owl-carousel";
+import carousel from "vue-owl-carousel";
 import Vue from "vue";
 import { VueTyper } from "vue-typer";
-
 import vuescroll from "vuescroll/dist/vuescroll-native";
 // import the css file
 import "vuescroll/dist/vuescroll.css";
-
 Vue.use(vuescroll);
 
 import VueWow from "vue-wow";
 Vue.use(VueWow);
 import { UAnimateContainer, UAnimate } from "vue-wow";
 
+// import VueAwesomeSwiper from "vue-awesome-swiper";
+// const { swiper, swiperSlide } = VueAwesomeSwiper;
+import "swiper/swiper-bundle.min.css";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import VueJsCounter from "vue-js-counter";
+
 export default {
-  components: { VueTyper, UAnimateContainer, UAnimate },
+  //   name: "swiper-example-3d-coverflow",
+  title: "3D Coverflow effect",
+  components: {
+    VueTyper,
+    UAnimateContainer,
+    UAnimate,
+    Swiper,
+    SwiperSlide,
+    carousel,
+    VueJsCounter,
+  },
+
   data() {
     return {
-      //   ops: {}, // Your options
-
       rail: {
-        background: 'rgb(233,233,243)',
+        background: "rgb(233,233,243)",
+      },
+
+      swiperOption: {
+        slidesPerView: 4,
+        // spaceBetween: 30,
+        // freeMode: true,
+        effect: "coverflow",
+        loop: true,
+        centeredSlides: true,
+        initialSlide: 3,
+        keyboardControl: true,
+        // mousewheelControl: false,
+        lazyLoading: true,
+        // nextButton: ".swiper-button-next",
+        // prevButton: ".swiper-button-prev",
+        coverflowEffect: {
+          rotate: 5,
+          stretch: 200,
+          depth: 350,
+          modifier: 2.5,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
       },
     };
   },
+  methods: {
+    prev() {
+      this.$refs.swiper.$swiper.slidePrev();
+    },
+    next() {
+      this.$refs.swiper.$swiper.slideNext();
+    },
+  },
 };
 </script>
+
+<style scoped>
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide1 {
+  background-image: url(https://i.ibb.co/42w2PVY/screenshot03.png);
+}
+
+.swiper-slide2 {
+  background-image: url(https://i.ibb.co/54tD5J2/screenshot01.png);
+}
+
+.swiper-slide3 {
+  background-image: url(https://i.ibb.co/JxX0VWZ/screenshot02.png);
+}
+
+.swiper-slide4 {
+  background-image: url(https://i.ibb.co/42w2PVY/screenshot03.png);
+}
+
+.swiper-slide5 {
+  background-image: url(https://i.ibb.co/Ny9wbbP/screenshot04.png);
+}
+
+.swiper-slide5 {
+  background-image: url(https://i.ibb.co/4PhsvHc/screenshot05.png);
+}
+
+.swiper-slide6 {
+  background-image: url(https://i.ibb.co/9ZjyzXW/screenshot06.png);
+}
+
+.swiper-slide7 {
+  background-image: url(https://i.ibb.co/kmMTLqj/slider-01.jpg);
+}
+
+.swiper-slide8 {
+  background-image: url(https://i.ibb.co/JxX0VWZ/screenshot02.png);
+}
+
+.swiper-slide9 {
+  background-image: url(https://i.ibb.co/54tD5J2/screenshot01.png);
+}
+
+.swiper-slide10 {
+  background-image: url(https://i.ibb.co/42w2PVY/screenshot03.png);
+}
+
+.swiper-slide11 {
+  background-image: url(https://i.ibb.co/Ny9wbbP/screenshot04.png);
+}
+
+.partner-img {
+  max-width: 130px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#ei-testimonial {
+  background: url(../assets/img/app-landing/background/tbg.jpg);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+  display: flex;
+  align-items: center;
+}
+</style>
+
+// https://i.ibb.co/hWLSt1c/mobile-1.png //
+https://i.ibb.co/54tD5J2/screenshot01.png //
+https://i.ibb.co/JxX0VWZ/screenshot02.png //
+https://i.ibb.co/42w2PVY/screenshot03.png //
+https://i.ibb.co/Ny9wbbP/screenshot04.png //
+https://i.ibb.co/4PhsvHc/screenshot05.png //
+https://i.ibb.co/9ZjyzXW/screenshot06.png //
+https://i.ibb.co/kmMTLqj/slider-01.jpg

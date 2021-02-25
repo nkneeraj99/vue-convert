@@ -5,13 +5,13 @@
         <div class="col-lg-4">
           <div class="ei-footer-widget pera-content appeight-headline">
             <div class="ei-footer-logo">
-              <img src="assets/img/app-landing/logo/f-logo.png" alt="" />
+              <img src="../assets/img/app-landing/logo/f-logo.png" alt="" />
             </div>
             <p>
               Fantasy Cricket app, Get Rs. 100 signup bonus.
             </p>
             <div class="ei-payment-mathod">
-              <img src="assets/img/app-landing/logo/paypal.png" alt="" />
+              <img src="../assets/img/app-landing/logo/paypal.png" alt="" />
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
             <div class="download-btn">
               <!--                                <a href="#"><img src="assets/img/app-landing/logo/app1.png" alt=""></a>-->
               <a href="app_updater/Favourite11.apk"
-                ><img src="assets/img/app-landing/logo/gp1.png" alt=""
+                ><img src="../assets/img/app-landing/logo/gp1.png" alt=""
               /></a>
             </div>
             <div class="ei-footer-social">

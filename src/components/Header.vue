@@ -8,7 +8,7 @@
           ><img src="../assets/img/app-landing/logo/logo1.png" alt=""
         /></a>
       </div>
-      <nav class="navigation-eight ul-li">
+      <nav class="navigation-eight ul-li ">
         <ul>
           <li><a class="nav-link" href="index.html">Home</a></li>
           <li><a class="nav-link" href="#feature-eight">Features</a></li>
@@ -38,7 +38,7 @@
                                 </div>-->
     </div>
     <!-- /desktop-menu -->
-    <div class="appi-ei-mobile_menu relative-position">
+    <!--<div class="appi-ei-mobile_menu relative-position">
       <div class="appi-ei-mobile_menu_button appi-ei-open_mobile_menu">
         <i class="fas fa-bars"></i>
       </div>
@@ -63,18 +63,57 @@
               <li>
                 <a class="nav-link" href="#ei-screenshots">Screenshots</a>
               </li>
-              <!--                                <li class="dropdown">
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>-->
+    <Burger />
+
+    <Sidebar class="appi-ei-mobile_menu_content">
+      <img src="../assets/img/app-landing/logo/f-logo.png" alt="" />
+      <div class="appi-ei-mobile-main-navigation  clearfix ul-li">
+        <ul
+          id="main-nav"
+          class="navbar-nav text-capitalize clearfix sidebar-panel-nav"
+        >
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="#feature-eight">Features</a></li>
+          <li><a class="nav-link" href="#eg-how-work">How to Play</a></li>
+          <li><a class="nav-link" href="#ei-appdownload">Download App</a></li>
+          <li><a class="nav-link" href="#ei-faq">FAQ</a></li>
+          <li><a class="nav-link" href="#ei-screenshots">Screenshots</a></li>
+          <!--                                <li class="dropdown">
                                                                     <a href="#">Blog</a>
                                                                     <ul class="dropdown-menu clearfix">
                                                                         <li><a target="_blank" href="blog.html">Blog Page</a></li>
                                                                         <li><a target="_blank" href="blog-single.html">Blog Details</a></li>
                                                                     </ul>
                                                                 </li>-->
-            </ul>
-          </nav>
-        </div>
+        </ul>
       </div>
-    </div>
+    </Sidebar>
     <!-- /mobile-menu -->
   </header>
 </template>
+
+<script>
+import Burger from "../components/Menu/Burger";
+import Sidebar from "../components/Menu/Sidebar";
+
+export default {
+  components: {
+    // HelloWorld,
+    Burger,
+    Sidebar,
+  },
+};
+</script>
+
+<style scoped>
+.burger-icon {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+}
+</style>
